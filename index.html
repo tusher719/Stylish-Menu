@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wallet</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+	<link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+
+	<div class="list-container">
+		<button class="more-button">
+			<div class="menu-icon">
+				<div class="menu-icon-line half first"></div>
+				<div class="menu-icon-line"></div>
+				<div class="menu-icon-line half last"></div>
+			</div>
+		</button>
+		<ul class="more-button-list">
+			<li class="more-button-list-item">
+				<i class="fas fa-cog"></i>
+				<span>Settiong</span>
+			</li>
+			<li class="more-button-list-item">
+				<i class="fas fa-copy"></i>
+				<span>copy</span>
+			</li>
+			<li class="more-button-list-item">
+				<i class="fas fa-share-alt"></i>
+				<span>share</span>
+			</li>
+			<li class="more-button-list-item">
+				<i class="fas fa-trash-alt"></i>
+				<span>delete</span>
+			</li>
+		</ul>
+	</div>
+	
+	<script>
+		document.querySelector('.more-button').addEventListener('click', function(){
+			document.querySelector('.list-container').classList.toggle('active');
+		});
+	</script>
+</body>
+</html>
